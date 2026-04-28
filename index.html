@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ariana Scoff's Menu</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;1,300;1,400&family=Jost:wght@200;300;400;500&display=swap" rel="stylesheet" />
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #f7f9f5; color: #1a2e1a; font-family: 'Jost', sans-serif; min-height: 100vh; display: flex; justify-content: center; align-items: flex-start; padding: 2rem 1rem; }
+    .root { width: 100%; max-width: 420px; padding: 1.25rem 1rem 1.5rem; }
+    .hero { text-align: center; padding: 1rem 0; border-bottom: 0.5px solid rgba(45,110,45,0.2); margin-bottom: 1rem; }
+    .hero-tag { font-size: 9px; font-weight: 300; letter-spacing: 0.35em; text-transform: uppercase; color: #3a8a3a; margin-bottom: 0.4rem; }
+    .hero-name { font-family: 'Cormorant Garamond', serif; font-size: 2rem; font-weight: 300; line-height: 1.1; color: #1a2e1a; }
+    .hero-name em { font-style: italic; color: #3a8a3a; }
+    .platform-badge { display: inline-block; margin-top: 0.5rem; font-size: 10px; font-weight: 300; letter-spacing: 0.15em; text-transform: uppercase; padding: 4px 14px; border: 0.5px solid rgba(58,138,58,0.4); color: #3a8a3a; border-radius: 20px; text-decoration: none; transition: background 0.2s; }
+    .platform-badge:hover { background: rgba(58,138,58,0.08); }
+    .section { margin-bottom: 0.75rem; }
+    .category-header { display: flex; align-items: center; gap: 8px; margin-bottom: 0.4rem; }
+    .category-line { flex: 1; height: 0.5px; background: rgba(45,110,45,0.18); }
+    .category-title { font-size: 8px; font-weight: 400; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(58,138,58,0.7); white-space: nowrap; }
+    .menu-grid { display: grid; gap: 5px; }
+    .menu-item { display: flex; align-items: center; justify-content: space-between; padding: 8px 12px; background: #ffffff; border: 0.5px solid rgba(45,110,45,0.12); border-radius: 7px; }
+    .menu-item-left { display: flex; align-items: center; gap: 8px; }
+    .menu-dot { width: 5px; height: 5px; border-radius: 50%; background: #3a8a3a; flex-shrink: 0; opacity: 0.7; }
+    .menu-name { font-family: 'Cormorant Garamond', serif; font-size: 14px; font-weight: 400; color: #1a2e1a; }
+    .menu-price { font-size: 12px; font-weight: 500; color: #2e7a2e; white-space: nowrap; }
+    .badge { font-size: 8px; letter-spacing: 0.15em; text-transform: uppercase; padding: 2px 7px; border-radius: 20px; font-weight: 400; margin-left: 6px; }
+    .badge-hot { background: rgba(200,60,60,0.08); color: #c03030; border: 0.5px solid rgba(200,60,60,0.2); }
+    .badge-popular { background: rgba(58,138,58,0.08); color: #2e7a2e; border: 0.5px solid rgba(58,138,58,0.25); }
+    .divider { height: 0.5px; background: rgba(45,110,45,0.15); margin: 0.75rem 0; }
+    .payment-section { background: #ffffff; border: 0.5px solid rgba(45,110,45,0.18); border-radius: 8px; padding: 0.75rem 1rem; }
+    .payment-title { font-size: 8px; font-weight: 400; letter-spacing: 0.35em; text-transform: uppercase; color: rgba(58,138,58,0.7); margin-bottom: 0.6rem; text-align: center; }
+    .payment-row { display: flex; align-items: center; justify-content: space-between; padding: 6px 0; border-bottom: 0.5px solid rgba(45,110,45,0.08); }
+    .payment-row:last-child { border-bottom: none; padding-bottom: 0; }
+    .payment-label { display: flex; align-items: center; gap: 7px; }
+    .payment-icon { width: 22px; height: 22px; border-radius: 5px; display: flex; align-items: center; justify-content: center; font-size: 11px; font-weight: 500; }
+    .cashapp-icon { background: #00c244; color: #fff; }
+    .venmo-icon { background: #3d95ce; color: #fff; }
+    .payment-app-name { font-size: 10px; font-weight: 300; color: rgba(26,46,26,0.5); letter-spacing: 0.08em; text-transform: uppercase; }
+    .payment-handle { font-family: 'Cormorant Garamond', serif; font-size: 14px; color: #1a2e1a; }
+    .footer { text-align: center; margin-top: 0.75rem; }
+    .footer-text { font-size: 9px; font-weight: 200; letter-spacing: 0.18em; text-transform: uppercase; color: rgba(26,46,26,0.3); }
+  </style>
+</head>
+<body>
+  <div class="root">
+    <div class="hero">
+      <div class="hero-tag">Exclusive Content Menu</div>
+      <div class="hero-name"><em>Ariana Scoff's</em> Menu</div>
+      <a class="platform-badge" href="https://x.com/ArianaScoff" target="_blank">X / Twitter</a>
+    </div>
+
+    <div class="section">
+      <div class="category-header"><div class="category-line"></div><div class="category-title">Services</div><div class="category-line"></div></div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">Dick Rating <span class="badge badge-hot">Hot</span></div></div>
+          <div class="menu-price">$10</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="category-header"><div class="category-line"></div><div class="category-title">Phone Calls</div><div class="category-line"></div></div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">10 Minute Call</div></div>
+          <div class="menu-price">$30</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">30 Minute Call <span class="badge badge-popular">Popular</span></div></div>
+          <div class="menu-price">$75</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">60 Minute Call</div></div>
+          <div class="menu-price">$100</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="category-header"><div class="category-line"></div><div class="category-title">Custom Videos</div><div class="category-line"></div></div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">5 Minute Custom Video</div></div>
+          <div class="menu-price">$25</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">10 Minute Custom Video <span class="badge badge-popular">Popular</span></div></div>
+          <div class="menu-price">$40</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="category-header"><div class="category-line"></div><div class="category-title">Video Packages</div><div class="category-line"></div></div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">5 Video Package</div></div>
+          <div class="menu-price">$20</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">10 Video Package <span class="badge badge-popular">Best value</span></div></div>
+          <div class="menu-price">$30</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <div class="category-header"><div class="category-line"></div><div class="category-title">Photo Packages</div><div class="category-line"></div></div>
+      <div class="menu-grid">
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">5 Photo Package</div></div>
+          <div class="menu-price">$10</div>
+        </div>
+        <div class="menu-item">
+          <div class="menu-item-left"><div class="menu-dot"></div><div class="menu-name">10 Photo Package <span class="badge badge-popular">Best value</span></div></div>
+          <div class="menu-price">$15</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="divider"></div>
+
+    <div class="payment-section">
+      <div class="payment-title">Payment — CashApp &amp; Venmo Only</div>
+      <div class="payment-row">
+        <div class="payment-label">
+          <div class="payment-icon cashapp-icon">$</div>
+          <div class="payment-app-name">CashApp</div>
+        </div>
+        <div class="payment-handle">$ArianaScoff</div>
+      </div>
+      <div class="payment-row">
+        <div class="payment-label">
+          <div class="payment-icon venmo-icon">V</div>
+          <div class="payment-app-name">Venmo</div>
+        </div>
+        <div class="payment-handle">@ArianaScoff</div>
+      </div>
+    </div>
+
+    <div class="footer">
+      <div class="footer-text">DM to order &nbsp;·&nbsp; All content is custom &amp; private</div>
+    </div>
+  </div>
+</body>
+</html>
